@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page Title</title>
+
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="shadow p-3 mb-5 bg-body-tertiary rounded">
+<div  class="encabezado1">
+    <img alt="Logo INE" src="INE.png" style="float:left;">
+    <p id="encabezado2"><strong>INSTITUTO NACIONAL DE ESTADÍSTICAS</strong>
+    <br>
+    <strong>
+     Departamento de Estadísticas Económicas
+    <br>
+    </strong>
+     Subdepartamento de Estadísticas Agropecuarias
+    <br>
+     Paseo Bulnes 418. Piso 8. Santiago-Chile
+    <br>
+     Teléfono:&nbsp; 23 2463885
+
+     www.ine.cl
+  </p>
+  </div>
+
+<h3><strong><center>ENCUESTA DE COSECHA DE CULTIVOS ANUALES</center></strong></h3>
+<h3><strong><center>AÑO AGRÍCOLA 2023/2024</center></strong></h3>
+</div>
+<br> 
+
+
+<style>
+    table, th, td {
+      border:1px solid black;
+    }
+    </style>
+    <body>
+      
+      <script type="text/javascript" src="script_20032023.js">
+        
+      </script>
+
+<table style="width:15%" >
+  <tr style=background-color:#0d819ef8;>
+    <th style="text-align: center;">Región</th>
+  </tr>
+  <tr>
+    <td><center><form action="/action_page.php">
+        <select name="Region" id="Region" >
+          <option value="opc1_r">Seleccione opción...</option>
+          <option value="Coquimbo">Coquimbo</option>
+          <option value="Valparaiso">Valparaiso</option>
+          <option value="Metropolitana">Metropolitana</option>
+          <option value="O'Higgins">O'Higgins</option>
+          <option value="Maule">Maule</option>
+          <option value="Ñuble">Ñuble</option>
+          <option value="Biobío">Biobío</option>
+          <option value="La Araucanía">La Araucanía</option>
+          <option value="Los Ríos">Los Ríos</option>
+          <option value="Los Lagos">Los Lagos</option>
+        </select>
+      </form>
+    </td>
+    </tr>
+        </center></td></table><br></body><br>
+    <div style="float:right;"></div> <table id="mytable">
+      <tr style=background-color:#0d819ef8;>
+        <th style="text-align: center;">Especie</th>
+        <th style="text-align: center;">Superficie (Ha)</th>
+        <th style="text-align: center;">En riego</th>
+        <th style="text-align: center;">Rendimiento/Ha</th>
+        <th style="text-align: center;">Unidad</th>
+        <th style="text-align: center;" title="Esta casilla sólo debe ser completada cuando&#10; se seleccione como unidad el saco">Peso sacos (Kg).</th>
+      </tr>
+      <tr>
+        <td><center><form action="/action_page.php">
+            <select name="Especie" id="Especie" >
+              <option value="opc1_e">Seleccione opción...</option>
+              <option value="Trigo Harinero">Trigo Harinero</option>
+              <option value="Trigo Candeal">Trigo Candeal</option>
+              <option value="Cebada Cervecera">Cebada Cervecera</option>
+              <option value="Cebada Forrajera">Cebada Forrajera</option>
+              <option value="Avena">Avena</option>
+              <option value="Maíz para consumo">Maíz para consumo</option>
+              <option value="Maíz para semilla">Maíz para semilla</option>
+              <option value="Arroz">Arroz</option>
+              <option value="Triticale">Triticale</option>
+              <option value="Poroto">Poroto</option>
+              <option value="Lenteja">Lenteja</option>
+              <option value="Garbanzo">Garbanzo</option>
+              <option value="Papa">Papa</option>
+              <option value="Raps (comercial)">Raps (comercial)</option>
+              <option value="Raps (semillero)">Raps (semillero)</option>
+              <option value="Maravilla (comercial)">Maravilla (comercial)</option>
+              <option value="Maravilla (semillero)">Maravilla (semillero)</option>
+              <option value="Lupino amargo">Lupino amargo</option>
+              <option value="Otros Lupinos">Otros Lupinos</option>
+              <option value="Remolacha azucarera">Remolacha azucarera</option>
+              <option value="Tabaco">Tabaco</option>
+              <option value="Tomate industrial">Tomate industrial</option>
+              <option value="Achicoria industrial">Achicoria industrial</option>
+            </select>
+          </form>
+            </center>
+          </td>
+        
+        <td><center><form action="/action_page.php">
+            <input type="number" step="any" id="superficie" name="superficie">
+          </form></center> </td>
+
+        <td><center><form action="/action_page.php">
+            <select name="sriego" id="sriego" name="sriego">
+              <option value="opc1_r">Seleccione opción...</option>
+              <option value="1.Riego">1.Riego</option>
+              <option value="2.Secano">2.Secano</option>
+            </select>
+          </form></center></td> 
+
+        <td><center><form action="/action_page.php">
+            <input type="number" id="Rendimiento" name="Rendimiento">
+          </form></center></td>
+         
+        <td><center><form action="/action_page.php">
+            <select name="Unidad" id="Unidad">
+              <option value="op1_u">Seleccione opción...</option>
+              <option value="1.ton">1.ton</option>
+              <option value="2.kg">2.kg</option>
+              <option value="3.qqm">3.qqm</option>
+              <option value="4.sacos">4.sacos</option>
+            </select>
+          </form></center></td>
+          <td><center><form action="/action_page.php">
+            <input type="number" id="peso-saco" name="peso-saco">
+          </form></center></td>
+
+      </tr>
+      
+    </table>
+    </div>
+
+  
+    <!-- ESTO ES EL TABLA DONDE IRÁ la producción -->
+    <table style="width:25%">
+      <tr style=background-color:#0d819ef8>
+        <th style="text-align: center;">Producción(qqm)</th>
+      </tr>
+      <tr><br></br><img id="Blanco" src="blanco.png" alt="Descripción de la imagen" height="200" width="200" style="float:right;"><img id="cultivo" class="shadow p-3 mb-5 bg-body-tertiary rounded" height="300" width="300" src="blanco.png" alt="Descripción de la imagen" style="float:right;"></div><br>
+
+<td id="Produccion_qqm"><center>Esperando calculos...</center></td><center> </center></td></table><br></body><br>
+<input type="button" class="btn btn-info" id="boton" value="Calcular" onclick="sumar()"><br><br>
+<p id="hora"></p>
+
+
+
+<!-- Acá crearé un rectángulo de color -->
+<div id="Rectangulo" class="alert alert-se" style="width: 600px; height: 50px; border: 1px solid rgb(238, 230, 230);">
+  <p> Rendimiento: <span id="rango"></span></p><br>
+
+</div>
+<br>
+<br>
+<br>
+<footer class="bg-dark py-5 mt-5">
+  <div class="container text-ligth text-center">
+    <p class="container text-ligth text center" style="color: aliceblue;">Instituto Nacional de Estadísticas</p>
+    <p class="container text-ligth text center" style="color: aliceblue;">Subdepartamento de Estadísticas Agropecuarias</p>
+    
+
+
+
+
+  </div>
+</footer>
+
+  
+
+</body>
+</html>
