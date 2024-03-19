@@ -1,0 +1,7 @@
+Poner alertas cuando falte algo que rellenar.
+Hacer un cuadro donde salga el calculo para que se llegar y copiar, pero que esto
+sea solicitado por la persona (un botón de muestrame el cálculo). 
+Podría poner un mapa que vaya cambiando la región según se vaya seleccionando a qué región
+corresponde. 
+-Se debe agregar la palabra rendimiento en el texto q dice está fuera de rango. 
+-Al poner trigo candeal en la región de coquimbo no hace el calculo de producción. 
